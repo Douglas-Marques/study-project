@@ -80,7 +80,6 @@ img {
 .row {
 	float: left;
 	width: 100%;
-	margin-bottom: 100px;
 }
 
 .loadmore {
@@ -305,6 +304,49 @@ img {
 	margin-bottom: 20px;
 }
 
+/*PARALLAX*/
+.parallax {
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 23px;
+	padding: 160px 0;
+	margin: 60px 0;
+	background: url(../images/bg-parallax.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.parallax h1 {
+	font-size: 38px;
+	margin-bottom: 10px;
+}
+
+.parallax button {
+	background: #f9014d;
+	font-size: 20px;
+	padding: 10px 15px;
+	margin-top: 20px;
+	color: #fff;	
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+}
+
+.parallax button:hover {
+	background: #e92863;
+}
+
+/*HIGHLIGHTS*/
+.highlight-col {
+	margin-bottom: 20px;
+}
+
 
 /* BREAKPOINTS MAX
 ---------------------------------*/
@@ -317,6 +359,10 @@ img {
 
 	.nav-close {
 		font-size: 22px;
+	}
+
+	.nav-close:hover {
+		color: #e92863;
 	}
 
 	.header .nav.active {
@@ -421,6 +467,18 @@ img {
 
 	.destiny-col:first-child {
 		width: 100%;
+	}
+
+	/*HIGHLIGHTS*/
+	.highlight-col {
+		width: 49%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		float: left;
+	}
+
+	.highlight-col:nth-child(even) {
+		margin-right: 0;
 	}
 }
 
